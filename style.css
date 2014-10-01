@@ -1,0 +1,17 @@
+	
+	.photo{
+			float:middle;
+			border:2px solid yellow;
+			padding-top:20px;
+			padding-left:5px;
+			padding-right:5px;
+			padding-bottom:40px;
+			margin-right:10px;
+			margin-bottom:10px;
+			background-color:grey;
+		}		
+		
+ 		
+
+ body {background-color:orange;}	
+	
