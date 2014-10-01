@@ -24,7 +24,8 @@
             After-Tax Deduction</div>
         <p>
             <asp:Button ID="calculateButton0" runat="server" Height="32px" Text="Calculate" Width="99px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Clear" runat="server" Height="32px" style="margin-top: 0px" Text="Clear" Width="99px" />
+            &nbsp;&nbsp;&nbsp;
         </p>
         <p>
             &nbsp;<asp:TextBox ID="resultTextBox" runat="server" Width="117px"></asp:TextBox>

@@ -20,6 +20,7 @@ Partial Class _Default
         'calculate the results
         preTaxIncome = weekHours * hourlyWadge - preDeduction
 
+        'Decide the salary range
         If preTaxIncome < 500 Then
             afterTaxIncome = preTaxIncome * 0.18 - afterDeduction
 
@@ -29,8 +30,17 @@ Partial Class _Default
             afterTaxIncome = preTaxIncome * 0.22 - afterDeduction
 
         End If
-
+        'get teh result 
         resultTextBox.Text = afterTaxIncome
 
+    End Sub
+
+    Protected Sub Clear_Click(sender As Object, e As EventArgs) Handles Clear.Click
+        'Clear all the results
+        weekHoursTextBox.Text = String.Empty
+        hourlyWadgeTextBox.Text = String.Empty
+        preDeductionTextBox.Text = String.Empty
+        afterDeductionTextBox.Text = String.Empty
+        resultTextBox.Text = String.Empty
     End Sub
 End Class
